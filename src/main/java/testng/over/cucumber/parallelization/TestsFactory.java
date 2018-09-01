@@ -3,6 +3,8 @@ package testng.over.cucumber.parallelization;
 import cucumber.api.testng.*;
 import cucumber.runtime.model.CucumberFeature;
 import org.testng.annotations.Factory;
+import testng.over.cucumber.parallelization.runners.FeatureRunnerForFactory;
+import testng.over.cucumber.parallelization.runners.ScenarioRunnerForFactory;
 
 
 public class TestsFactory {

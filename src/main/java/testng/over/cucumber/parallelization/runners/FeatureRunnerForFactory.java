@@ -1,4 +1,4 @@
-package testng.over.cucumber.parallelization;
+package testng.over.cucumber.parallelization.runners;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.*;
@@ -23,7 +23,7 @@ public class FeatureRunnerForFactory {
     private ResourceLoader resourceLoader;
 
 
-    FeatureRunnerForFactory(CucumberFeature feature) {
+    public FeatureRunnerForFactory(CucumberFeature feature) {
         this.feature = feature;
 
         ClassLoader classLoader = this.getClass().getClassLoader();

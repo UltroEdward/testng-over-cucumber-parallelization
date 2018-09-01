@@ -1,4 +1,4 @@
-package testng.over.cucumber.parallelization;
+package testng.over.cucumber.parallelization.runners;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.CucumberFeatureWrapper;
@@ -32,7 +32,7 @@ public class ScenarioRunnerForFactory {
     private ResourceLoader resourceLoader;
 
 
-    ScenarioRunnerForFactory(PickleEventWrapper pickleWrapper, CucumberFeatureWrapper featureWrapper) {
+    public ScenarioRunnerForFactory(PickleEventWrapper pickleWrapper, CucumberFeatureWrapper featureWrapper) {
         this.pickleWrapper = pickleWrapper;
         this.featureWrapper = featureWrapper;
 
